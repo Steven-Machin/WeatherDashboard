@@ -1,30 +1,75 @@
-*{
-    color: lightblue;
-    background: grey;
-    font-family: 'Courier New', Courier, monospace;
-    
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
 }
 
-#cityInput, #cityName, #inputContainer,button{
-    margin: 5px;
-    padding: 5px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#app {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eaf6ff; /* Light blue background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
+}
 
-}
-#weatherContainer {
-    position: absolute;
-    top: 70%;
-    bottom: 50%;
-    left: 10%;
-
-}
-.icons {
-    display: inline-block;
-    float: left; 
-    border: 5px solid black;
-}
-.minTempurature {
-    text-align: center;
-    display: inline-block;
+#cityInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+#forecastContainer {
+    margin-top: 20px;
+}
+
+.forecast {
+    background-color: #ffffff; /* White forecast background */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.forecast p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.forecast img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #app {
+        width: 90%;
+    }
+
+    #cityInput {
+        width: 100%;
+    }
 }

@@ -3,47 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
 </head>
 <body>
-    <center>
-        <h1>5-Days Weather Forecast</h1>
-        <p id="inputContainer">City: <input type="text" id="cityInput"></p>
-    <button>Click me</button>
-    <h2 id="cityName">Chicago</h2>
-
-    </center>
-  <div id="weatherContainer">
-<div id="iconsContainer">
-    <div class="icons">
-        <p class="weather" id="day1"></p>
-      <p class="minTemperature" id="day1Min">Loading...</p>
-      <p class="maxTemperature" id="day1Max">Loading...</p>
+    <div id="app">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchButton">Search</button>
+        <div id="forecastContainer">
+            <!-- Weather forecast will be displayed here -->
+        </div>
     </div>
-    <div class="icons">
-        <p class="weather" id="day2"></p>
-      <p class="minTemperature" id="day2Min">Loading...</p>
-      <p class="maxTemperature" id="day2Max">Loading...</p>
-    </div>
-    <div class="icons">
-        <p class="weather" id="day3"></p>
-      <p class="minTemperature" id="day3Min">Loading...</p>
-      <p class="maxTemperature" id="day3Max">Loading...</p>
-    </div>
-    <div class="icons">
-        <p class="weather" id="day4"></p>
-      <p class="minTemperature" id="day4Min">Loading...</p>
-      <p class="maxTemperature" id="day4Max">Loading...</p>
-    </div>
-    <div class="icons">
-        <p class="weather" id="day5"></p>
-      <p class="minTemperature" id="day5Min">Loading...</p>
-      <p class="maxTemperature" id="day5Max">Loading...</p>
-    </div>
-</div>
-
-  </div>
     <script src="script.js"></script>
 </body>
 </html>
